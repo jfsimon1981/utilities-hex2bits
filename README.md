@@ -4,8 +4,7 @@ hexadecimal to bits  converter (command line tool)
 - Reads hex from command line input (0xff 0xef5c ...) or from file passed in argument.
 - Display format 16/32+ bits
 
-```./hex2bits
-
+```
 Usage: ./hex2bits 0x... or ./hex2bits file
 ./hex2bits 0xff 0x3c3d 0xff35
 ./hex2bits list.txt
@@ -26,4 +25,5 @@ Usage: ./hex2bits 0x... or ./hex2bits file
       Bits                            Bit    Hex
 00010000 11000011 11111111 00100101  28.07  (0x10c3ff25)
 00011111 10000110 11111100 11011111  28.98  (0x1f86fcdf)
-00011101 10011100 11111010 10011100  28.89  (0x1d9cfa9c)```
+00011101 10011100 11111010 10011100  28.89  (0x1d9cfa9c)
+```
