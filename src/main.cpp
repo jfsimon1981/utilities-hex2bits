@@ -21,7 +21,7 @@ void bits_16(unsigned int vin) {
 	cout_s.insert(12, 1, ' '); // 4 bits separators.
 	cout_s.insert(8, 1, ' '); //  4 bits separators.
 	cout_s.insert(4, 1, ' '); // 4 bits separators.
-	cout << cout_s << setw(7) << log2(vin) << setw(5) << "(0x" << std::hex << vin << ")" << endl;
+	cout << cout_s << setw(7) << log2(vin+1) << setw(5) << "(0x" << std::hex << vin << ")" << endl;
 }
 
 void bits_32(unsigned int vin) {
