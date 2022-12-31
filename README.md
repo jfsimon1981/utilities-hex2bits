@@ -1,7 +1,7 @@
 # utilities-hex2bits
 hexadecimal to bits  converter (command line tool)
 
-- Reads from command line input or from file passed in argument.
+- Reads hex from command line input (0xff 0xef5c ...) or from file passed in argument.
 - Display format 16/32+ bits
 
 ```./hex2bits
