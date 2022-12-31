@@ -6,7 +6,7 @@ hexadecimal to bits  converter (command line tool)
 
 ```./hex2bits
 
-Usage: ./hex2bits 0x... or ./hex2bit file
+Usage: ./hex2bits 0x... or ./hex2bits file
 ./hex2bits 0xff 0x3c3d 0xff35
 ./hex2bits list.txt
 

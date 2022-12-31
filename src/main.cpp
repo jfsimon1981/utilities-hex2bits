@@ -60,7 +60,7 @@ void example() {
 
 void usage() {
 	cout << endl;
-	cout << "Usage: ./hex2bits 0x... or ./hex2bit file" << endl;
+	cout << "Usage: ./hex2bits 0x... or ./hex2bits file" << endl;
 	cout << "./hex2bits 0xff 0x3c3d 0xff35" << endl;
 	cout << "./hex2bits list.txt" << endl;
 	cout << endl;
