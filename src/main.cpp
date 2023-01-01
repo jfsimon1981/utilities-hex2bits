@@ -1,10 +1,17 @@
 #include <bitset>
 #include <cmath>
+#include <err.h>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
 #include <sstream>
 #include "jfs.h"
+
+#ifdef __OpenBSD__
+#include <unistd.h>
+#include <err.h>
+#endif
+
 using namespace std;
 
 // Converts hexa-decimal to bitmask
@@ -87,6 +94,10 @@ void parse_and_display(string i) {
 }
 
 int main(int argc, char** argv) {
+#ifdef __OpenBSD__
+	if (pledge("stdio rpath", NULL) == -1)
+		err(1, "pledge");
+#endif
 	vector<string> args {args_read(argc, argv)};
 	
 	// Setup cout floating point decimal printout
