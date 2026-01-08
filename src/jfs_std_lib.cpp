@@ -1,6 +1,6 @@
 #include <string>
 #include <vector>
-#include <jfs>
+#include "jfs.h"
 using namespace std;
 //using std::string;
 //using std::vector;
